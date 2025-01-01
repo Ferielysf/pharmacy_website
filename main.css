@@ -1,0 +1,481 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Rakkas&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Merriweather", serif;
+}
+
+
+body {
+    min-height: 100vh;
+    background-color: #B3D7E0;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.3rem 10%;
+    background: #2E5077;
+    backdrop-filter: blur(70px);
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    z-index: 100;
+}
+
+
+
+.signin {
+    color: white;
+}
+
+.logo {
+    font-size: 40px;
+    color: #F6F4F0;
+    text-decoration: none;
+    font-weight: 700;
+    margin-right: auto;
+    font-family: "Abril Fatface", serif;
+    font-style: normal;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.navbar ul{
+    list-style: none;
+}
+
+.navbar ul li{
+    display: inline-block;
+    position: relative;
+}
+
+.navbar ul li a {
+font-size: 20px;
+color: #F6F4F0;
+text-decoration: none;
+font-weight: 500;
+margin-left: 4rem;
+display: block;
+text-align: center;
+}
+.navbar ul li a:hover{
+    border-bottom: 2px solid rgb(26, 123, 100);
+}
+
+
+.navbar .dropdown{
+    display:none;
+    position: absolute;
+    z-index: 100;
+}
+
+.navbar .dropdown li{
+    display: block;
+}
+
+.navbar .dropdown li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #B3D7E0;
+    padding-top: 10px;
+    background: rgba(27, 149, 135, 0.408);
+    backdrop-filter: blur(70px);
+}
+
+.navbar ul li:hover .dropdown {
+    display: block;
+}   
+
+
+
+.bx.bxs-cart {
+    font-size: 30px;
+    color: black;
+    margin-right: 20px;
+}
+
+.signin {
+font-size: 20px;
+color: #F6F4F0;
+text-decoration: none;
+font-weight: 500;
+}
+
+.bx.bx-user-circle{
+    font-size: 40px;
+    color: black;
+}
+
+.bx.bxs-cart:hover{
+    color: rgb(34, 55, 45);
+}
+
+.cart , .signin {
+    margin-left: auto;
+}
+
+.signin,
+.bx.bx-user-circle {
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+
+
+.container{
+    position: relative ;
+    margin-top: 45px;
+}
+
+.ph{
+    width: 90%;
+    filter: blur(0.4px);
+    margin-left: 5%;
+    margin-top: 50px;
+
+}
+
+.ph-heading{
+    position: absolute;
+    transform: translate(16%,-420%) ;
+    font-size: 50px;
+    color: #1A4D6D;   
+    font-weight: 1000;
+    text-shadow: 5px 5px 5px rgb(221, 247, 241);
+}
+
+.ph-heading .ph-logo{
+    font-family: "Abril Fatface", serif;
+    font-style: normal;
+    font-size: 60px;
+}
+
+.ph-subheading {
+    position: absolute;
+    transform: translate(-15%,-320%) ;
+    font-size: 20px;
+    color: rgb(247, 255, 254);   
+    font-weight: 600;
+    text-shadow: 5px 5px 5px rgb(163, 164, 164);
+    background-color: #7FB3C1;
+    padding: 20px 50px 5px 190px;
+    backdrop-filter: blur(10px);
+    border-radius: 7px;
+}
+
+
+.search{
+    width: 700px;
+    display: flex;
+    align-items: center;
+    padding: 8px 10px;
+    border-radius: 20px;
+    background: #f6f6f676;
+    backdrop-filter: blur(30px);
+    transform: translate(60%, -340%);
+    
+}
+
+form{
+    width: 100%; 
+    display: flex;
+    align-items: center;
+}
+.bx.bx-search{
+    font-size: 25px;
+    color: rgba(0, 0, 0, 0.491);
+}
+
+.search_input{
+    background: transparent ;
+    outline : none;
+    border: none;
+    font-size : 15px;
+    margin-left: 10px;
+    width: 100%;
+
+}
+
+.search_btn{
+    font-size: 25px;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 5px 10px;
+    margin-left: auto;
+    background-color: #1A4D6D;
+    cursor: pointer;
+    
+}
+
+.search_btn:hover{
+    background-color: rgba(17, 66, 54, 0.804);
+}
+.container2{
+    width: 100%;
+}
+
+.container2 h2{
+    font-size: 30px;
+    font-weight: 800;
+    color: #1A4D6D;
+    text-align: center;
+}
+
+.promo{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 100px;
+}
+
+.promo1, .promo2, .promo3{
+    text-align: center;
+    border-radius: 20px; 
+    margin: 20px 30px;
+    background: rgba(44, 90, 84, 0.195);
+    backdrop-filter: blur(70px);
+    flex: 1;
+    padding: 10px;
+    box-shadow: -10px 10px 8px rgba(0, 0, 0, 0.236);
+}
+
+
+.container2 img{
+    width: 100%;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+.container2 button{
+    font-size: 15px;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 5px 10px;
+    margin-left: auto;
+    background-color: #1A4D6D;
+    cursor: pointer;
+}
+
+.container2 button:hover{
+    font-size: 13px;
+    padding: 6px 14px;
+    background-color: #B3D7E0;
+    box-shadow: -2px 2px 8px rgba(0, 0, 0, 0.236);
+}
+
+.container2 p{
+    font-size: 15px;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+.container3{
+    display: flex;
+    justify-content: space-between;
+    margin: 100px 5%;
+    background-color: rgba(30, 100, 92, 0.068);
+    backdrop-filter: blur(70px);
+    border-radius: 20px;
+    width: 90%;
+    height: 600px;
+    background-image: url('images/9.png');
+    background-size: cover;
+    background-position: center;
+
+}
+
+.container3 .title{
+    margin-top: 100px;
+    width: 600px;
+    
+
+}
+
+.container3 .title h2{
+    font-size: 40px;
+    font-weight: 800;
+    color: #1A4D6D;
+    margin-bottom: 30px;
+    
+    
+}
+.container3 .title p{
+    font-size: 25px;
+    font-weight: 400;
+    color: rgb(253, 253, 253);
+    background-color: rgba(28, 111, 92, 0.304);
+    padding: 20px 130px 20px 20px;
+    backdrop-filter: blur(30px);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 0 ; 
+    border-bottom-left-radius: 10px; 
+    border-bottom-right-radius: 0;
+    width: 670px;
+    
+}
+
+.container3 .title button{
+    font-size: 30px;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 20px 50px;
+    margin-top: 70px;
+    background-color: #7FB3C1;
+    cursor: pointer;
+    margin-left: 170px;
+}
+
+
+.container3 .title button:hover {
+    font-size: 28px;
+    padding: 21px 57px;
+    background-color: #7FB3C1;
+    box-shadow: -2px 2px 8px rgba(0, 0, 0, 0.236);
+}
+
+.container3 .img{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: auto;
+}
+
+.container3 .img .img1{
+    height: 340px;
+    margin-top: 60px;
+    margin-left: 30px;
+}
+
+.container3 .img img{
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 20px;
+    box-shadow: -5px 5px 15px rgba(0, 0, 0, 0.156);
+}
+
+.container3 .img .img2{
+    height: 290px;
+    transform: translate(-47%,90%);
+}
+
+
+
+
+.container4{
+    position: relative;
+}
+
+.container4 .video{
+    margin: 100px 5%;
+    border-radius: 20px;
+    width: 90%;
+    height: 600px;
+    overflow: hidden;
+}
+
+.container4 video{
+    width: 100%;
+}
+
+.container4 .title{
+    position: absolute;
+    top: 0px;
+    margin-top: 350px;
+}
+
+.container4 .title h2{
+    font-size: 30px;
+    font-weight: 800;
+    color: rgb(227, 248, 243);
+    font-weight: 600;
+    background-color: rgba(28, 111, 92, 0.304);
+    padding: 20px 20px 20px 200px;
+    backdrop-filter: blur(30px);
+    border-radius: 10px;
+    width: 800px;
+    margin-left: -100px;
+    margin-bottom: 20px;
+}
+
+.container4 .title button{
+    font-size: 30px;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 20px 50px;
+    background-color: #2E5077;
+    cursor: pointer;
+    margin-left: 200px;
+}
+
+.container4 .title button:hover{
+    font-size: 28px;
+    padding: 21px 57px;
+    background-color: rgba(17, 66, 54, 0.804);
+    box-shadow: -2px 2px 8px rgba(0, 0, 0, 0.236);
+}
+
+
+
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #7FB3C1;
+    backdrop-filter: blur(30px);
+    padding: 40px 0px;
+}
+
+footer .contactus form{
+    display: block;
+}
+
+footer .contactus h2{
+    margin-bottom: 20px;
+}
+
+footer .contactus form input{
+    width: 300px;
+    height: 40px;
+    border: none;
+    border-bottom: 2px solid rgb(26, 123, 100);
+    background-color: transparent ;
+    margin: 10px;
+}
+
+footer .contactus form button{
+    font-size: 20px;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 15px 100px;
+    background-color: #1A4D6D;
+    cursor: pointer;
+    margin-left: 25px;
+}
+
+footer .contactus form button:hover{
+    font-size: 20px;
+    padding: 16px 101px;
+    background-color: #1A4D6D;
+    box-shadow: -2px 2px 8px rgba(0, 0, 0, 0.236);
+}
+
+footer .local 
